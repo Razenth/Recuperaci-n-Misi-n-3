@@ -59,6 +59,7 @@ login.addEventListener('click', ()=>{
             if(encontrado.username == inputUser.value){
                 inputEmail.value=''
                 inputUser.value=''
+                localStorage.setItem('user', JSON.stringify(encontrado))
                 location.href='./welcome.html'
 
             }else{

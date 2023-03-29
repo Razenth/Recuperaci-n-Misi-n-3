@@ -106,17 +106,18 @@ html,body{
 
 .rightContainer{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     width: 40%;
     color:#3E334E ;
     padding: 20px;
 }
 
 header{
-    width: 60%;
+    width: 100%;
     padding: 20px;
+    text-align: center;
+    font-size: 50px;
 }
 
 .archint{
@@ -128,115 +129,12 @@ header{
 header p{
     height: 60px;
     width: 100%;
-    font-size: 19px;
+    font-size: 30px;
 }
 
-.containerForm{
-    padding: 20px;
-    height: 80%;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-}
-
-.userLabel, .emailLabel{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-weight: 600;
-}
-
-.email, .user{
-    height: 40px;
-    padding: 10px;
-    border-radius: 5px;
-    border-style: none;
-    border: 1px solid #3E334E;
-    outline: none;
-}
-
-.email{
-    text-decoration: underline;
-}
-
-.options{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-    margin-bottom: 15px;
-}
-
-#checkbox{
-    cursor: pointer;
-}
-
-
-.forgot{
-    text-decoration: underline; 
-    cursor: pointer;
-}
-
-.buttons{
-    display: flex;
-    height: 10%;
-    width: 100%;
-    gap: 5px;
-    padding: 5px;
-}
-
-#login, #signUp{
-    background-color: #3E334E;
-    color: white;
-    border-style: none;
-    height: 90%;
-    width: 50%;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-#login:hover, #signUp:hover{
-    background-color: white;
-    color: #3E334E;
-    border-style: none;
-    border: 1px solid #3E334E;
-}
-
-
-.error{
-    color: rgb(172, 27, 27);
-    display: none;
-}
-
-.orLogin{
-    margin-top: 35px;
-    text-align: center;
-}
-
-
-.redes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-    width: 100%;
-    gap: 15px;
-}
-
-.Facebook, .Linked, .Google{
-    width: 30%;
-    height: 60%;
-    border-radius: 4px;
-    border-style: none;
-    border: 1px solid rgba(0, 0, 0, 0.534);
-    cursor: pointer;
-}
-
-.Facebook:hover, .Linked:hover, .Google:hover{
-    background-color: #3E334E;
-    color: white;
-    border-style: none;
-}
 
 @media (max-width:1200px){
+
     .archint{
         width: 190px;
         display: flex;
@@ -265,21 +163,13 @@ header p{
         height: 20%;
     }
 
-    #login, #signUp{
-        background-color: #3E334E;
-        color: white;
-        border-style: none;
-        height: 55%;
-        width: 50%;
-        border-radius: 10px;
-    }
-
     .orLogin{
         margin-top: 25px;
     }
 
     .redes{
         display: flex;
+        /* flex-direction: column; */
         justify-content: center;
         align-items: center;
         align-self: center;
@@ -287,16 +177,17 @@ header p{
         width: 350px;
         gap: 15px;
         padding: 10px;
+        border: 1px solid;
     }
 
 
     .Facebook, .Linked, .Google{
         width: 90%;
-        height: 40%;
+        height: 70%;
         border-radius: 5px;
         border-style: none;
         border: 1px solid rgba(102, 100, 100, 0.719);
-        border-radius: 4px;
+        /* font-size: 10px; */
     }
 }
 
@@ -372,16 +263,8 @@ header p{
     }
 
     .buttons{
+        border: 1px solid;
         height: 100px;
-    }
-
-    #login, #signUp{
-        background-color: #3E334E;
-        color: white;
-        border-style: none;
-        height: 70%;
-        width: 50%;
-        border-radius: 10px;
     }
 
 
@@ -394,14 +277,5 @@ header p{
         width: 100%;
         gap: 15px;
         padding: 10px;
-    }
-
-    .Facebook, .Linked, .Google{
-        width: 90%;
-        height: 50%;
-        border-radius: 5px;
-        border-style: none;
-        border: 1px solid rgba(102, 100, 100, 0.719);
-        border-radius: 4px;
     }
 }
